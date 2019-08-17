@@ -1,0 +1,439 @@
+/* =================================
+          Mobile Menu
+==================================== */
+
+.navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #4285F4;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    /* hide mobile nav open btn */
+    display: none;
+}
+
+#mobile-nav {
+    /* By Default, mobile nav will be hidden with height 0% */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(225, 225, 225, .9);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #4285F4;
+    background: none;
+}
+
+/* Mobile Nav scroll spy active state */
+
+.white-nav-top #mobile-nav ul.nav > li.active > a {
+    color: #4285F4;
+    font-weight: 500;
+}
+
+/* =================================
+    Bootstrap 3 Media Queries
+==================================== */
+/* Large Devices (Desktops & Laptops) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+}
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    .vertical-heading h5 {
+        font-size: 18px;
+    }
+
+    /* Sessions 02 */
+    #sessions-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 400px;
+    }
+
+    .session-tab p {
+        line-height: 20px;
+    }
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    /* Home */
+    #home-heading h1 {
+        font-size: 41px;
+    }
+
+    #home-text p {
+        font-size: 13px;
+    }
+
+    /* Generic */
+    .btn-general {
+        padding: 8px 35px 8px 35px;
+        font-size: 10px;
+    }
+
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    .vertical-heading h5 {
+        font-size: 18px;
+    }
+
+    /* Tech statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Sessions 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    /* Tab active state */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #4285F4;
+        font-weight: 700;
+        border-bottom: 3px solid #4285F4;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+
+    /* Blog */
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+
+    /* Contact */
+    ul.office-details li {
+        margin-right: 15px;
+    }
+
+    ul.office-details li i {
+        width: 25px;
+    }
+}
+
+/* Extra Small Devices (LandScape Phones & Portrait Tablets) */
+@media (max-width: 767px) {
+
+
+    /* Navigation */
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 0;
+    }
+
+    /* show mobile nav open btn */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+
+    /* Home */
+    #home-heading h1 {
+        font-size: 22px;
+    }
+
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+
+    /* Generic */
+    .btn-general {
+        padding: 8px 25px 6px 35px;
+        font-size: 10px;
+    }
+
+    /* About 01 */
+    /* Large Content Box */
+    .content-box-lg {
+        padding: 90px 0;
+    }
+
+    /* Vertical heading */
+    .vertical-heading {
+        text-align: center;
+    }
+
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    #about-left {
+        margin-bottom: 50px;
+    }
+
+    #about-right {
+        text-align: center;
+    }
+
+    /* About 02 */
+    /* Medium Content Box */
+    .content-box-md {
+        padding: 80px 0;
+    }
+
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 35px;
+    }
+
+    .about-item i {
+        font-size: 30px;
+    }
+
+    .about-item h3 {
+        font-size: 18px;
+    }
+
+    /* Team */
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+
+    /* Tech Statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Sessions 01 */
+
+    /* Horizontal heading */
+    .horizontal-heading {
+        margin-bottom: 40px;
+    }
+
+    .horizontal-heading h2 {
+        font-size: 30px;
+    }
+
+    #sessions-01 img {
+        margin: 35px 0;
+    }
+
+    .session,
+    .session .icon {
+        text-align: center;
+    }
+
+    .session h4 {
+        font-size: 18px;
+    }
+
+    /* Sessions 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    /* Tab active state */
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #4285F4;
+        font-weight: 700;
+        border-bottom: 3px solid #4285F4;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+    #sessions-tabs .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    #sessions-tabs h2 {
+        font-size: 40px;
+    }
+
+    #sessions-tabs h3 {
+        font-size: 28px;
+    }
+
+    /* Gallery */
+    #gallery {
+        padding-bottom: 0;
+    }
+
+    /* Blog */
+    #blog-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-post {
+        margin-bottom: 25px;
+    }
+
+    /* Contact */
+    #contact-left {
+        text-align: center;
+    }
+
+    .chapter {
+        margin-bottom: 40px;
+    }
+
+    ul.chapter-details li {
+        display: block;
+        margin-top: 25px;
+    }
+
+    ul.chapter-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones &  Smaller Devices) */
+@media (max-width: 480px) {
+
+    /* Preloader */
+    #preloader {
+        background-color: #fff;
+        position: fixed;
+        height: auto;
+        width: auto;
+    }
+
+    #status {
+        height: auto;
+        width: 80vw !important;
+    }
+
+    /* Home */
+    #home-heading h1 {
+        font-size: 18px;
+    }
+
+    #home-text p {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 8px 10px 25px 10px;
+    }
+
+    /* Generic */
+    .vertical-heading h2 {
+        font-size: 22px;
+    }
+}
