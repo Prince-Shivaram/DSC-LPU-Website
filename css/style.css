@@ -453,10 +453,12 @@ ul.social-list li:nth-child(4) a:hover {
     margin: 0;
 }
 
-.owl-theme .owl-nav:hover {
+.owl-theme .owl-nav
+[class*=owl-]:hover {
     background: none;
-    color: #212226;
+    color: black;
 }
+
 
 /* =================================
         Statement
