@@ -8,7 +8,7 @@ The Website is created by [J. Siv Ram Shastri](https://www.linkedin.com/in/imsiv
 
 Website - https://prince-shivaram.github.io/DSC-LPU-Website/
 
-## Show some :heart: and star the repo to support the project
+## Show some :heart: and :star: the repo to support the project
 
 ### Home Section
 [![1](https://user-images.githubusercontent.com/42378118/78452823-45c14280-76ab-11ea-940c-4f47af66e2a0.png)](https://prince-shivaram.github.io/DSC-LPU-Website/)
